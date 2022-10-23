@@ -1,6 +1,6 @@
 export default function SocialLink() {
   return (
-    <div className="hidden fixed bottom-6 left-8  lg:left-14 md:flex flex-col gap-2 pointer-events-auto">
+    <div className="hidden fixed bottom-6 left-8  lg:left-16 xl:left-20 md:flex flex-col gap-2 pointer-events-auto">
       {/* Github */}
       <a
         href="https://github.com/whatTheFath"

@@ -2,7 +2,7 @@ import SocialLink from './socialLink';
 
 export default function Footer() {
   return (
-    <footer className=" flex flex-col items-center max-w-5xl mx-auto px-8 py-8">
+    <footer className=" flex flex-col items-center max-w-5xl mx-auto px-8 md:px-20 lg:px-24 xl:px-8 py-8">
       <FooterSocialLink />
       <p className="text-xs sm:text-sm font-medium text-gray-400 mb-1">
         Redesigned & developed by Fathul Irfaan Abdillah

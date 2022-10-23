@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-8 py-16"
+      className="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-8 md:px-20 lg:px-24 xl:px-8 py-16"
     >
       <div className="flex items-center gap-2 justify-center mb-6 sm:mb-10">
         <div className="w-10 h-[2px] bg-gray-500"></div>

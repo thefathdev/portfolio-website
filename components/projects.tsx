@@ -9,7 +9,7 @@ export default function Projects({projects}: {projects: ProjectPropsWithId[]}) {
   return (
     <div
       id="projects"
-      className="min-h-screen flex flex-col justify-center  max-w-5xl mx-auto px-8 py-20"
+      className="min-h-screen flex flex-col justify-center  max-w-5xl mx-auto px-8 md:px-20 lg:px-24 xl:px-8 py-20"
     >
       <div className="flex gap-2 items-center mb-2 sm:mb-4">
         <div className="w-14 h-[2px] bg-gray-500 md:w-16"></div>
