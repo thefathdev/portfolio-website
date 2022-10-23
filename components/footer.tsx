@@ -9,7 +9,11 @@ export default function Footer() {
       </p>
       <div className="text-xs sm:text-sm font-medium text-gray-400">
         Heavily inspired by{' '}
-        <a href="https://brittanychiang.com/" className="text-gray-500 hover:text-blue-600">
+        <a
+          href="https://brittanychiang.com/"
+          target="_blank"
+          className="text-gray-500 hover:text-blue-600"
+        >
           Brittany Chiang
         </a>
       </div>
