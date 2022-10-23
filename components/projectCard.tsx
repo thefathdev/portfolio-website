@@ -8,13 +8,17 @@ export type ProjectProps = {
 
 export default function ProjectCard({name, preview, repo, desc, techs}: ProjectProps) {
   return (
-    <div className="flex flex-col cursor-pointer group hover:shadow-lg py-8 px-6">
+    <div className="flex flex-col group hover:shadow-lg py-8 px-6">
       <div className="flex justify-between items-center mb-6">
         {/* Go to Icon */}
-        <a href={preview} className="opacity-0 group-hover:opacity-100 transition-opacity">
+        <a
+          href={preview}
+          target="_blank"
+          className="opacity-0 group-hover:opacity-100 transition-opacity"
+        >
           <span className="sr-only">go to repository</span>
           <svg
-            className="fill-blue-600  hover:cursor-pointer "
+            className="fill-gray-500 hover:fill-blue-600  hover:cursor-pointer "
             width="48"
             height="48"
             viewBox="0 0 32 32"
@@ -29,7 +33,7 @@ export default function ProjectCard({name, preview, repo, desc, techs}: ProjectP
           </svg>
         </a>
         {/* Github Icon */}
-        <a href={repo} className=" hover:-translate-y-2 transition-transform">
+        <a href={repo} target="_blank" className=" hover:-translate-y-2 transition-transform">
           <span className="sr-only">go to repository</span>
           <svg
             className="hover:fill-blue-600 hover:cursor-pointer"
