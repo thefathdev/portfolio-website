@@ -57,6 +57,7 @@ export default function About() {
             src={profileSrc}
             width={400}
             height={400}
+            alt="Fathul Irfaan Abdillah"
           />
           <div className="absolute top-0 right-0 w-full h-full rounded-xl  backdrop-saturate-0 bg-white/10 group-hover:backdrop-saturate-100 transition"></div>
         </div>

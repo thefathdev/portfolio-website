@@ -61,7 +61,7 @@ export default function ProjectCard({name, preview, repo, desc, techs}: ProjectP
           techs.length > 0 &&
           techs.map(tech => {
             return (
-              <li className="text-sm font-medium text-gray-400" key={tech}>
+              <li className="text-sm font-medium text-gray-600" key={tech}>
                 {tech}
               </li>
             );
