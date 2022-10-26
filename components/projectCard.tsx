@@ -1,3 +1,6 @@
+import {motion} from 'framer-motion';
+import {slideUp} from '../animations/textAnimation';
+
 export type ProjectProps = {
   name: string;
   preview: string;
@@ -6,9 +9,21 @@ export type ProjectProps = {
   techs?: string[];
 };
 
-export default function ProjectCard({name, preview, repo, desc, techs}: ProjectProps) {
+export default function ProjectCard({
+  name,
+  preview,
+  repo,
+  desc,
+  techs,
+  delay,
+}: ProjectProps & {delay: number}) {
   return (
-    <div className="flex flex-col group hover:shadow-lg py-8 px-6">
+    <motion.div
+      variants={slideUp(delay * 2)}
+      initial="hidden"
+      whileInView="visible"
+      className="flex flex-col group hover:shadow-lg py-8 px-6"
+    >
       <div className="flex justify-between items-center mb-6">
         {/* Go to Icon */}
         <a
@@ -67,6 +82,6 @@ export default function ProjectCard({name, preview, repo, desc, techs}: ProjectP
             );
           })}
       </ul>
-    </div>
+    </motion.div>
   );
 }
